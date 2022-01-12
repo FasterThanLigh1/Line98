@@ -1,0 +1,289 @@
+Using pre-set license
+Built from '2020.3/release' branch; Version is '2020.3.12f1 (b3b2c6512326) revision 11776710'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Pro; OS build 19042.1415; Version 2009; 64bit' Language: 'en' Physical Memory: 12171 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+D:\UnityEditor\2020.3.12f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+D:/UnityWithGithub/Line98
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+64512
+Successfully changed project path to: D:/UnityWithGithub/Line98
+D:/UnityWithGithub/Line98
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 82.45 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.12f1 (b3b2c6512326)
+[Subsystems] Discovering subsystems at path D:/UnityEditor/2020.3.12f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/UnityWithGithub/Line98/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce 840M (ID=0x1341)
+    Vendor:   
+    VRAM:     2020 MB
+    Driver:   23.21.13.8857
+Initialize mono
+Mono path[0] = 'D:/UnityEditor/2020.3.12f1/Editor/Data/Managed'
+Mono path[1] = 'D:/UnityEditor/2020.3.12f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'D:/UnityEditor/2020.3.12f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56656
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: D:/UnityEditor/2020.3.12f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: D:/UnityEditor/2020.3.12f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.005372 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 74.60 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.990 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.011365 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 76.18 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.419 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.11 seconds
+Refreshing native plugins compatible for Editor in 4.53 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2199 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 96.0 MB.
+System memory in use after: 96.1 MB.
+
+Unloading 41 unused Assets to reduce memory usage. Loaded Objects now: 2624.
+Total: 3.302000 ms (FindLiveObjects: 0.252300 ms CreateObjectMapping: 0.131200 ms MarkObjects: 2.772400 ms  DeleteObjects: 0.143900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/CodeMonkey
+  artifactKey: Guid(16b451a71f8c5644886a3d83a5a80de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CodeMonkey using Guid(16b451a71f8c5644886a3d83a5a80de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1832475f8db39e08af1d805d110b84bd') in 0.011106 seconds 
+  Import took 0.018115 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 693.629544 seconds.
+  path: Assets/Editor
+  artifactKey: Guid(d98ad1674ee8d5040ad22d07feddcab5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Editor using Guid(d98ad1674ee8d5040ad22d07feddcab5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40fef55b648584d5cae54ceb68e57337') in 0.009455 seconds 
+  Import took 0.021242 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.923473 seconds.
+  path: Assets/Editor/com.unity.mobile.notifications
+  artifactKey: Guid(8d94ea3741ad8d344a76cca0aa62f67e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Editor/com.unity.mobile.notifications using Guid(8d94ea3741ad8d344a76cca0aa62f67e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56e9b68fe1bdbdbdbadd02540846decf') in 0.012783 seconds 
+  Import took 0.023930 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001335 seconds.
+  path: Assets/Editor/com.unity.mobile.notifications
+  artifactKey: Guid(8d94ea3741ad8d344a76cca0aa62f67e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Editor/com.unity.mobile.notifications using Guid(8d94ea3741ad8d344a76cca0aa62f67e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56e9b68fe1bdbdbdbadd02540846decf') in 0.007815 seconds 
+  Import took 0.017156 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.173710 seconds.
+  path: Assets/Editor/com.unity.mobile.notifications/NotificationSettings.asset
+  artifactKey: Guid(4cee8bca36f2ab74b8feb832747fa6f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Editor/com.unity.mobile.notifications/NotificationSettings.asset using Guid(4cee8bca36f2ab74b8feb832747fa6f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed81eb14f0998a09d0cbd7ea3d01d7a8') in 0.141794 seconds 
+  Import took 0.154242 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.293301 seconds.
+  path: Assets/CodeMonkey/Assets.cs
+  artifactKey: Guid(eda7ff5f6e8175c4da119ea9ed256f6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CodeMonkey/Assets.cs using Guid(eda7ff5f6e8175c4da119ea9ed256f6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '326fae54dff27685d037f04b1beda273') in 0.033249 seconds 
+  Import took 0.041806 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.042722 seconds.
+  path: Assets/CodeMonkey/Assets.cs
+  artifactKey: Guid(eda7ff5f6e8175c4da119ea9ed256f6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CodeMonkey/Assets.cs using Guid(eda7ff5f6e8175c4da119ea9ed256f6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '326fae54dff27685d037f04b1beda273') in 0.008713 seconds 
+  Import took 0.019418 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.358702 seconds.
+  path: Assets/CodeMonkey/Utils
+  artifactKey: Guid(d900c58c01968cd42bb98e37d8e4d05c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CodeMonkey/Utils using Guid(d900c58c01968cd42bb98e37d8e4d05c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c17f48128f1547e82c2f32e1de49fe8a') in 0.008810 seconds 
+  Import took 0.019773 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002923 seconds.
+  path: Assets/CodeMonkey/Utils
+  artifactKey: Guid(d900c58c01968cd42bb98e37d8e4d05c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CodeMonkey/Utils using Guid(d900c58c01968cd42bb98e37d8e4d05c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c17f48128f1547e82c2f32e1de49fe8a') in 0.008601 seconds 
+  Import took 0.018886 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.480839 seconds.
+  path: Assets/CodeMonkey/Utils/Button_Sprite.cs
+  artifactKey: Guid(4771330f098d1db4898ad07204154d04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CodeMonkey/Utils/Button_Sprite.cs using Guid(4771330f098d1db4898ad07204154d04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d9f07b9f4271d0c20588fd0cdf43b43') in 0.008583 seconds 
+  Import took 0.022463 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.010396 seconds.
+  path: Assets/CodeMonkey/Utils/Button_Sprite.cs
+  artifactKey: Guid(4771330f098d1db4898ad07204154d04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CodeMonkey/Utils/Button_Sprite.cs using Guid(4771330f098d1db4898ad07204154d04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d9f07b9f4271d0c20588fd0cdf43b43') in 0.011695 seconds 
+  Import took 0.023334 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.585690 seconds.
+  path: Assets/CodeMonkey/Utils/World_Bar.cs
+  artifactKey: Guid(cc20fdc736e8c9442b35e4bcc04c596c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CodeMonkey/Utils/World_Bar.cs using Guid(cc20fdc736e8c9442b35e4bcc04c596c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f407a3dcdb42b8411098befd0a09626e') in 0.007016 seconds 
+  Import took 0.016988 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002246 seconds.
+  path: Assets/CodeMonkey/Utils/World_Bar.cs
+  artifactKey: Guid(cc20fdc736e8c9442b35e4bcc04c596c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CodeMonkey/Utils/World_Bar.cs using Guid(cc20fdc736e8c9442b35e4bcc04c596c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f407a3dcdb42b8411098befd0a09626e') in 0.008324 seconds 
+  Import took 0.017949 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.408873 seconds.
+  path: Assets/CodeMonkey/Utils/UI_TextComplex.cs
+  artifactKey: Guid(8ba4b604c0e9db241bb3d130165415cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CodeMonkey/Utils/UI_TextComplex.cs using Guid(8ba4b604c0e9db241bb3d130165415cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e3ddbaf50f3921c42a9656fe5262465') in 0.009249 seconds 
+  Import took 0.021385 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.313345 seconds.
+  path: Assets/CodeMonkey/Utils/UI_Sprite.cs
+  artifactKey: Guid(d0052e8fbe8cbcd4d8c48038d364333b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CodeMonkey/Utils/UI_Sprite.cs using Guid(d0052e8fbe8cbcd4d8c48038d364333b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1fba9abfd972cad24652913e4345590a') in 0.008426 seconds 
+  Import took 0.017512 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 50.725332 seconds.
+  path: Assets/CodeMonkey/Assets
+  artifactKey: Guid(87d70cfb1e610ac4dadb3551cb1dc28b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CodeMonkey/Assets using Guid(87d70cfb1e610ac4dadb3551cb1dc28b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e2eba4ea591a8e9041429653a629a8b') in 0.007534 seconds 
+  Import took 0.016588 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001575 seconds.
+  path: Assets/CodeMonkey/Assets
+  artifactKey: Guid(87d70cfb1e610ac4dadb3551cb1dc28b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CodeMonkey/Assets using Guid(87d70cfb1e610ac4dadb3551cb1dc28b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e2eba4ea591a8e9041429653a629a8b') in 0.007459 seconds 
+  Import took 0.025260 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.584816 seconds.
+  path: Assets/CodeMonkey/MonoBehaviours
+  artifactKey: Guid(5abf4c77cbf61d94995a40be42eeaee0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CodeMonkey/MonoBehaviours using Guid(5abf4c77cbf61d94995a40be42eeaee0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cda1f05f3cd1ee6d77c42e275b90f74f') in 0.010056 seconds 
+  Import took 0.017979 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000732 seconds.
+  path: Assets/CodeMonkey/MonoBehaviours
+  artifactKey: Guid(5abf4c77cbf61d94995a40be42eeaee0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CodeMonkey/MonoBehaviours using Guid(5abf4c77cbf61d94995a40be42eeaee0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cda1f05f3cd1ee6d77c42e275b90f74f') in 0.006860 seconds 
+  Import took 0.014231 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.418662 seconds.
+  path: Assets/CodeMonkey/Resources
+  artifactKey: Guid(9c480003fd87d3548ae91e921a89a579) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CodeMonkey/Resources using Guid(9c480003fd87d3548ae91e921a89a579) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '979da2636c0cf90bb1242896185638d7') in 0.009014 seconds 
+  Import took 0.016614 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.449596 seconds.
+  path: Assets/CodeMonkey/Assets/Circle.png
+  artifactKey: Guid(a0e35f6b808bb7447826cc6c69ffe448) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CodeMonkey/Assets/Circle.png using Guid(a0e35f6b808bb7447826cc6c69ffe448) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '244d4e9e4bcf4382c9d7d05d2636d331') in 0.248882 seconds 
+  Import took 0.260806 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000545 seconds.
+  path: Assets/CodeMonkey/Assets/White_1x1.png
+  artifactKey: Guid(170577bce7cbda144b82578f81308d23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CodeMonkey/Assets/White_1x1.png using Guid(170577bce7cbda144b82578f81308d23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd494e2af3e37c0319c990d96c35d1ca') in 0.020182 seconds 
+  Import took 0.027962 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000559 seconds.
+  path: Assets/CodeMonkey/Assets/White_1x1.mat
+  artifactKey: Guid(7d5e8e2c082a4c44a9abd7d650cf0a15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CodeMonkey/Assets/White_1x1.mat using Guid(7d5e8e2c082a4c44a9abd7d650cf0a15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59c6622c20b6bc253334370740268f4e') in 0.149179 seconds 
+  Import took 0.156848 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.823373 seconds.
+  path: Assets/CodeMonkey/CMDebug.cs
+  artifactKey: Guid(d6005648898e7f647ad2202fe256c311) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CodeMonkey/CMDebug.cs using Guid(d6005648898e7f647ad2202fe256c311) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '164e585fae2c00567f56e7a61ac52b7c') in 0.007569 seconds 
+  Import took 0.014657 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.875003 seconds.
+  path: Assets/CodeMonkey/README.txt
+  artifactKey: Guid(f59bf2b41588bd44780fc5218f7864e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CodeMonkey/README.txt using Guid(f59bf2b41588bd44780fc5218f7864e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6ab6e1d82652f9d12629065bc2da060') in 0.018062 seconds 
+  Import took 0.026694 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001323 seconds.
+  path: Assets/CodeMonkey/README.txt
+  artifactKey: Guid(f59bf2b41588bd44780fc5218f7864e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CodeMonkey/README.txt using Guid(f59bf2b41588bd44780fc5218f7864e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6ab6e1d82652f9d12629065bc2da060') in 0.007030 seconds 
+  Import took 0.016100 seconds .
+
