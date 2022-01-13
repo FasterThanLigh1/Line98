@@ -3,15 +3,17 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Tilemap
+  - Balls
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - balll
   - Water
   - UI
-  - 
+  - background
   - 
   - 
   - 
@@ -38,6 +40,12 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: background
+    uniqueID: 3466380221
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: ball
+    uniqueID: 4055807583
     locked: 0
