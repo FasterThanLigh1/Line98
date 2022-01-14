@@ -10,10 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4740280376749671623}
   - component: {fileID: 5289639621430391823}
-  - component: {fileID: -4504321607000100152}
   - component: {fileID: 2173119284954569645}
   - component: {fileID: -816911777774549394}
-  - component: {fileID: -3738559712992958940}
   - component: {fileID: 768688859}
   m_Layer: 0
   m_Name: ball
@@ -87,18 +85,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &-4504321607000100152
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2259738441005119209}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9c479a83a321a9640b93e8cd5b2d2ce0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!50 &2173119284954569645
 Rigidbody2D:
   serializedVersion: 4
@@ -136,18 +122,6 @@ CircleCollider2D:
   m_Offset: {x: 0.00000008940697, y: 0}
   serializedVersion: 2
   m_Radius: 0.42927578
---- !u!114 &-3738559712992958940
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2259738441005119209}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9c479a83a321a9640b93e8cd5b2d2ce0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &768688859
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -162,4 +136,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   canMoved: 0
-  move: 0
