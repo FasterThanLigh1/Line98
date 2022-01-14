@@ -136,3 +136,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   canMoved: 0
+  ballIndex: 1
+  waypointIndex: 0

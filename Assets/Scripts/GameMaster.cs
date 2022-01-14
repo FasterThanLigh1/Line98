@@ -12,21 +12,19 @@ public class GameMaster : MonoBehaviour
     void Start()
     {
         gameBoard = new Board(9, 9, 1f);
+        gameBoard.RandomArrayBallsGenerator(this.transform.position, balls, 3, balls.Length);
+        SpawnMiniBalls(3);
     }
 
     // Update is called once per frame
     void Update()
     {
         if (Input.GetMouseButtonDown(0)) {
-            
-            SpawnMiniBalls();
-            //gameBoard.RandomArrayBallsGenerator(this.transform.position, balls, 5, balls.Length);
-        }
-        if (Input.GetMouseButtonDown(1)) {
             Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             Vector2 mousePos2D = new Vector2(mousePos.x, mousePos.y);
             RaycastHit2D hit = Physics2D.Raycast(mousePos2D, Vector2.zero);
             if(hit.collider != null) {
+                
                 if (hit.collider.tag == "Balls") {
                     Debug.Log(hit.collider.gameObject.name);
                     GotoMouse go = hit.collider.GetComponent<GotoMouse>();
@@ -36,7 +34,15 @@ public class GameMaster : MonoBehaviour
         }
         
     }
-    void SpawnMiniBalls () {
-        gameBoard.MiniBallsGenerator(this.transform.position, miniBalls, 3, miniBalls.Length, balls);
+    public void BallMoveUpdate(Vector2 startPoint, Vector2 endPoint) {
+        gameBoard.BallMoves(startPoint, endPoint);
+        //SetWalkableStatus(endPoint, false);
+        //SetWalkableStatus(startPoint, true);
+    }
+    void SpawnMiniBalls (int n) {
+        gameBoard.MiniBallsGenerator(this.transform.position, miniBalls, n, miniBalls.Length, balls);
+    }
+    public void Spawn() {
+        SpawnMiniBalls(3);
     }
 }

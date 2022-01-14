@@ -13,18 +13,11 @@ public class TestMatrix : MonoBehaviour
     public List<PathNode> openList = new List<PathNode>();
     //list for traveled item
     public List<PathNode> closeList = new List<PathNode>();
+
     void Start()
     {
         arrayMatrix = new PathNode[width, height];
-        for (int i = 0; i < width; i++) {
-            for (int j = 0; j < height; j++) {
-                PathNode temp = new PathNode(0, 0, null);
-                arrayMatrix[i, j] = temp;
-                arrayMatrix[i, j].x = i;
-                arrayMatrix[i, j].y = j;
-                arrayMatrix[i, j].gCOst = int.MaxValue;
-            }
-        }
+        CleanMatrix();
     }
 
     // Update is called once per frame
@@ -36,8 +29,6 @@ public class TestMatrix : MonoBehaviour
         }*/
     }
     public List<PathNode> PathFinding(PathNode startNode, PathNode endNode) {
-        Debug.Log("start " + startNode.x + " l " +startNode.y);
-        Debug.Log("end " + endNode.x + " l " + endNode.y);
         startNode.gCOst = 0;
         startNode.hCost = CalcDistance(startNode, endNode);
         startNode.CalculateFCost();
@@ -71,6 +62,7 @@ public class TestMatrix : MonoBehaviour
             }
         }
         Debug.Log("no path");
+        CleanMatrix();
         return null;
     }
 
@@ -112,6 +104,7 @@ public class TestMatrix : MonoBehaviour
             currentNode = currentNode.prevNode;
         }
         path.Reverse();
+        CleanMatrix();
         return path;
     }
 
@@ -121,10 +114,26 @@ public class TestMatrix : MonoBehaviour
         }
     }
 
+    public void SetWalkable(Vector2 position, bool value) {
+        arrayMatrix[Mathf.FloorToInt(position.x), Mathf.FloorToInt(position.y)].isWalkable = value;
+    }
+
     public int CalcDistance(PathNode a, PathNode b) {
         int x = Mathf.Abs(a.x - b.x);
         int y = Mathf.Abs(a.y - b.y);
         return (x + y) * STRAIGHT_VALUE;
+    }
+
+    void CleanMatrix() {
+        for (int i = 0; i < width; i++) {
+            for (int j = 0; j < height; j++) {
+                PathNode temp = new PathNode(0, 0, null);
+                arrayMatrix[i, j] = temp;
+                arrayMatrix[i, j].x = i;
+                arrayMatrix[i, j].y = j;
+                arrayMatrix[i, j].gCOst = int.MaxValue;
+            }
+        }
     }
 }
 
