@@ -46,6 +46,7 @@ public class GotoMouse : MonoBehaviour
                 //GAME MASTER ACTION
                 gameMaster.BallMoveUpdate(this.transform.position, mousePos2D);
                 gameMaster.CheckIfEatean(this.gameObject);
+                gameMaster.Spawn();
             }
         }
         if(transform.position == target && moving) {

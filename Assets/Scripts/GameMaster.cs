@@ -28,7 +28,6 @@ public class GameMaster : MonoBehaviour
                 if (hit.collider.tag == "Balls") {
                     GotoMouse go = hit.collider.GetComponent<GotoMouse>();
                     go.SetMoved();
-                    Spawn();
                 }
             }
         }
