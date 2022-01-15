@@ -29,6 +29,7 @@ public class Board : MonoBehaviour
         currentNumberOfBalls++;
         resMatrix[(int)initPosition.x, (int)initPosition.y] = true;
         delMatrix[(int)initPosition.x, (int)initPosition.y] = gameObject;
+        delMatrix[(int)initPosition.x, (int)initPosition.y] = gameObject;
         float x = initPosition.x + cellSize / 2;
         float y = initPosition.y + cellSize / 2;
         Instantiate(gameObject, new Vector2(x, y), gameObject.transform.rotation);
@@ -81,10 +82,11 @@ public class Board : MonoBehaviour
     }
 
     public void BallMoves(Vector2 startPoint, Vector2 endPoint) {
-        Debug.Log(Mathf.FloorToInt(startPoint.x) + " " + Mathf.FloorToInt(startPoint.y));
-        Debug.Log(Mathf.FloorToInt(endPoint.x) + " " + Mathf.FloorToInt(endPoint.y));
         resMatrix[Mathf.FloorToInt(startPoint.x), Mathf.FloorToInt(startPoint.y)] = false;
         resMatrix[Mathf.FloorToInt(endPoint.x), Mathf.FloorToInt(endPoint.y)] = true;
+    }
+    public void dost(GameObject ingame) {
+        Debug.Log(ingame.transform.position.x);
     }
 
     public void EatBall(GameObject current) {
@@ -93,15 +95,29 @@ public class Board : MonoBehaviour
         //UP
         int counter = 0;
         for (int i = 1; i < 5; i++) {
-            if(i > horizontal) break;
-            if(delMatrix[(int)currentPos.x, (int)currentPos.y + i].gameObject.GetComponent<GotoMouse>().ballIndex == matchIndex) {
+            if((currentPos.y + i) > horizontal) {} else
+            if(delMatrix[(int)currentPos.x, (int)currentPos.y + i] == null) {} else 
+            if(delMatrix[(int)currentPos.x, (int)currentPos.y + i].gameObject.GetComponent<GotoMouse>().ballIndex != matchIndex) 
+            {} else {
                 counter++;
-            }else break;
+            }
+        }
+        //DOWN
+        for (int i = 1; i < 5; i++) {
+            if((currentPos.y - i) < 0) {} else
+            if(delMatrix[(int)currentPos.x, (int)currentPos.y - i] == null) {} else
+            if(delMatrix[(int)currentPos.x, (int)currentPos.y - i].gameObject.GetComponent<GotoMouse>().ballIndex != matchIndex) 
+            {} else {
+                counter++;
+            }
         }
         //VERTICAL
         
         //LINE
-
+        if (counter == EAT_BALL_NUMBER) {
+            Debug.Log("yes\n");
+        }
+        Debug.Log("nothing happended " + counter);
     }
 }
 

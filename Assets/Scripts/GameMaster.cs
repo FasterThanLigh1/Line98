@@ -26,9 +26,9 @@ public class GameMaster : MonoBehaviour
             if(hit.collider != null) {
                 
                 if (hit.collider.tag == "Balls") {
-                    Debug.Log(hit.collider.gameObject.name);
                     GotoMouse go = hit.collider.GetComponent<GotoMouse>();
                     go.SetMoved();
+                    Spawn();
                 }
             }
         }
@@ -44,5 +44,8 @@ public class GameMaster : MonoBehaviour
     }
     public void Spawn() {
         SpawnMiniBalls(3);
+    }
+    public void CheckIfEatean(GameObject thisBall) {
+        gameBoard.EatBall(thisBall);
     }
 }

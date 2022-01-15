@@ -38,15 +38,14 @@ public class GotoMouse : MonoBehaviour
                 
                 target.z = transform.position.z;
                 target = new Vector3((float)Mathf.FloorToInt(target.x) + (cellSize / 2), (float)Mathf.FloorToInt(target.y) + (cellSize / 2));
-                Debug.Log(target);
+                
                 pathway = matrix.PathFinding(matrix.arrayMatrix[(int)this.transform.position.x, (int)this.transform.position.y],
                                                             matrix.arrayMatrix[(int)target.x, (int)target.y]);
-                Debug.Log(pathway.Count);
                 target = new Vector3(pathway[0].x + cellSize / 2, pathway[0].y + cellSize / 2, 0);
                 moving = true;
                 //GAME MASTER ACTION
                 gameMaster.BallMoveUpdate(this.transform.position, mousePos2D);
-                gameMaster.Spawn();
+                gameMaster.CheckIfEatean(this.gameObject);
             }
         }
         if(transform.position == target && moving) {
